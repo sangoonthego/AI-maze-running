@@ -1,15 +1,15 @@
 # Maze Runner AI
 
-Một game mê cung nơi người chơi và AI cùng thi đấu để tìm lối ra trước.
+A maze game where players and AI compete to find the exit first.
 
-## Tính năng
+## Features
 
-- **Mê cung ngẫu nhiên**: Mỗi lần chơi là một mê cung khác nhau
-- **AI thông minh**: Kết hợp BFS, A* và DFS để tìm đường
-- **Giao diện đẹp**: Sử dụng Pygame với hiệu ứng visual
-- **Hệ thống điểm**: Theo dõi thời gian và hiệu suất
+- **Random Maze Generation**: Each game features a different maze
+- **Smart AI**: Combines BFS, A* and DFS algorithms to find paths
+- **Beautiful Interface**: Uses Pygame with visual effects
+- **Scoring System**: Tracks time and performance
 
-## Cài đặt
+## Installation
 
 1. Clone repository:
 ```bash
@@ -17,23 +17,23 @@ git clone <repository-url>
 cd ai-maze-runner
 ```
 
-2. Cài đặt dependencies:
+2. Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Chạy game:
+3. Run the game:
 ```bash
 python main.py
 ```
 
-## Cách chơi
+## How to Play
 
-- **WASD** hoặc **Arrow Keys**: Di chuyển người chơi
+- **WASD** or **Arrow Keys**: Move the player
 - **R**: Restart game
-- **ESC**: Thoát game
+- **ESC**: Exit game
 
-## Cấu trúc dự án
+## Project Structure
 
 ```
 ai-maze-runner/
@@ -41,55 +41,55 @@ ai-maze-runner/
 ├── src/
 │   ├── game/
 │   │   ├── __init__.py
-│   │   ├── game_engine.py  # Game loop và logic chính
-│   │   ├── renderer.py     # Xử lý render
-│   │   └── input_handler.py # Xử lý input
+│   │   ├── game_engine.py  # Game loop and main logic
+│   │   ├── renderer.py     # Rendering handler
+│   │   └── input_handler.py # Input handler
 │   ├── maze/
 │   │   ├── __init__.py
-│   │   ├── maze_generator.py # Tạo mê cung
-│   │   └── maze_solver.py   # Thuật toán giải mê cung
+│   │   ├── maze_generator.py # Maze generation
+│   │   └── maze_solver.py   # Maze solving algorithms
 │   ├── ai/
 │   │   ├── __init__.py
 │   │   ├── bfs.py          # Breadth-First Search
 │   │   ├── astar.py        # A* Algorithm
 │   │   ├── dfs.py          # Depth-First Search
-│   │   └── ai_controller.py # Điều khiển AI
+│   │   └── ai_controller.py # AI controller
 │   ├── player/
 │   │   ├── __init__.py
-│   │   └── player.py       # Logic người chơi
+│   │   └── player.py       # Player logic
 │   └── ui/
 │       ├── __init__.py
-│       ├── menu.py         # Menu chính
+│       ├── menu.py         # Main menu
 │       └── hud.py          # Heads-up display
 ├── assets/
 │   ├── fonts/
 │   ├── images/
 │   └── sounds/
 ├── config/
-│   └── settings.py         # Cấu hình game
+│   └── settings.py         # Game configuration
 └── tests/
     ├── __init__.py
     ├── test_maze.py
     └── test_ai.py
 ```
 
-## Thuật toán AI
+## AI Algorithms
 
 ### BFS (Breadth-First Search)
-- Tìm đường ngắn nhất từ start đến goal
-- Hiệu quả cho mê cung đơn giản
+- Finds the shortest path from start to goal
+- Efficient for simple mazes
 
 ### A* (A-star)
-- Kết hợp heuristic để tối ưu hóa tìm đường
-- Tránh các bẫy và chướng ngại vật
+- Combines heuristics to optimize pathfinding
+- Avoids traps and obstacles
 
 ### DFS (Depth-First Search)
-- Khám phá các lối đi chưa biết
-- Tìm đường thay thế khi bị kẹt
+- Explores unknown paths
+- Finds alternative routes when stuck
 
-## Đóng góp
+## Contributing
 
-Mọi đóng góp đều được chào đón! Vui lòng tạo issue hoặc pull request.
+All contributions are welcome! Please create an issue or pull request.
 
 ## License
 
