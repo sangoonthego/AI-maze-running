@@ -88,6 +88,11 @@ ai-maze-runner/
 - Finds alternative routes when stuck
 
 ## Contributing
+- Contributors:
+   + Nguyen Tuan Ngoc
+   + Tang Ngoc Hau
+   + Phan Tran Chi Bao
+   + Bui Duc Manh
 
 All contributions are welcome! Please create an issue or pull request.
 
